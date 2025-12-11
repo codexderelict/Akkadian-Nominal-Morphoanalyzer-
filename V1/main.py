@@ -1,6 +1,6 @@
 import FreeSimpleGUI as sg 
 from akkadian_engine import Noun
-sg.ChangeLookAndFeel('SystemDefaultForReal')
+sg.theme('SystemDefaultForReal')
 layout = [
     [sg.Text('Enter noun here: '), sg.InputText(key='-INPUT-'), sg.Button('Analyze')],
     [sg.Text('Gender: ', key="-GENDER-"), sg.Text('Number: ',key='-NUMBER-'),sg.Text('Case:',key='-CASE-')]
@@ -20,3 +20,4 @@ window.close()
         
 
     
+
