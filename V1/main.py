@@ -7,7 +7,7 @@ layout = [
     [sg.Text('Gender: ', key="-GENDER-"), sg.Text('Number: ',key='-NUMBER-'),sg.Text('Case:',key='-CASE-')]
 
 ]
-window = sg.Window('Nominal Akkadian Morphoanalyzer V1.0', layout)
+window = sg.Window('Akkadian Nominal Morphoanalyzer V1.0', layout)
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED:
@@ -19,4 +19,5 @@ while True:
         window["-CASE-"].update(f"Case: {noun.case}")
 window.close()
         
+
     
