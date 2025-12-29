@@ -1,0 +1,18 @@
+patterns = {
+    r"[^t]um?$": ["masc", "sg", "nom", "rect"],
+    r"[^t]im?$": ["masc", "sg", "gen", "rect"],
+    r"[^t]am?$": ["masc", "sg", "acc", "rect"],
+    r"[^t][āa]n":["masc", "dual", "nom", "rect"],
+    r"[^t][īi]n":["masc", "dual", "obl", "rect"],
+    r"[^t]ū$":["masc", "pl", "nom", "rect"],
+    r"[^t]ī$":["masc", "pl", "obl", "rect"],
+    r"[^āīē]tum?$": ["fem", "sg", "nom", "rect"],
+    r"[^āīē]tim?$": ["fem", "sg", "gen", "rect"],
+    r"[^āīē]tam?$": ["fem", "sg", "acc", "rect"],
+    r"t[āa]n$":["fem", "dual", "nom", "rect"],
+    r"t[īi]n$":["fem", "dual", "obl", "rect"],
+    r"[āīē]tum?$": ["fem", "pl", "nom", "rect"],
+    r"[āīē]tim?$": ["fem", "pl", "obl", "rect"],
+    r"t$": ["fem", "sg", "nom", "abs/con"],
+    r"[^āīēaie]$": ["masc", "sg", "nom", "abs/con"],
+}
