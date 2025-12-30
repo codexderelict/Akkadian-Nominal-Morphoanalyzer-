@@ -4,7 +4,7 @@ Well, hello! Welcome to V1.1 of the Akkadian Nominal Morphoanalyzer, or Akkadian
 
 In fact, I may give this a fun name like Bashmu, named after the Mesopotamian snake god (since it's written in Python). I may also add a Sumerogram as the favicon, the one for "snake" (𒈲, can you see it?)
 
-One issue I'm facing is disambiguating status absolutus from constructus, which can only be done syntactically if there's multiple words. Right now, it's written as "abs/con", since it could be both.
+One issue I'm facing is disambiguating status absolutus from constructus, which can only be done syntactically if there's multiple words and would require more than just regexes (i.e. the backbone of the project). Right now, it's written as "abs/con", since it could be both.
 
 ### REQUIREMENTS
 Python 3.13
