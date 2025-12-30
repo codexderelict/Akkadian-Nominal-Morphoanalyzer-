@@ -1,6 +1,6 @@
 ### INTRODUCTION
 
-Well, hello! Welcome to V1.1 of the Akkadian Nominal Morphoanalyzer, or Akkadian Noun Morphoanalyzer, ANM for short. For those unfamiliar, this is an application/program I made to analyze Akkadian nouns, obviously. When a noun is inputted, information on the noun is outputted. For those unfamiliar with Akkadian, it's an ancient Semitic language spoken in Mesopotamia, which mainly comprises Iraq in the modern day. It was the language of the Akkadian Empire, the first known imperial state, as well as the language of the Code of Hammurabi.  
+Well, hello! Welcome to V1.1 of the Akkadian Nominal Morphoanalyzer, or Akkadian Noun Morphoanalyzer, ANM for short. For those unfamiliar, this is an application/program I made to analyze Akkadian nouns (I sure do come up with some descriptive names!) When a noun is inputted, information on the noun is outputted. For those unfamiliar with Akkadian, it's an ancient Semitic language spoken in Mesopotamia, which mainly comprises Iraq in the modern day. It was the language of the Akkadian Empire, the first known imperial state, as well as the language of the Code of Hammurabi.  
 
 In fact, I may give this a fun name like Bashmu, named after the Mesopotamian snake god (since it's written in Python). I may also add a Sumerogram as the favicon, the one for "snake" (𒈲, can you see it?)  
 
