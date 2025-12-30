@@ -15,6 +15,6 @@ Run main.py, and you'll be greeted with the GUI. Input the noun in the text prom
 ### WHAT'S NEW 
 A half-baked state analysis system! Well, maybe 3/4ths baked, since the absolute state is not often used. That's it! 
 ### POTENTIAL IMPROVEMENTS
-Support for two words instead of just one
-The use of said two words to disambiguate status absolutus from constructus 
-To that end, Minimalistic syntax system (as in Chomskyan minimalism, with a capital M) to merge two nouns and analyze their relationship
+Support for two words instead of just one  
+The use of said two words to disambiguate status absolutus from constructus  
+To that end, a VERY small Minimalistic syntax system (as in Chomskyan minimalism, with a capital M) to merge two nouns and analyze their relationship (no Move nor Agree, sorry!)    
