@@ -18,3 +18,7 @@ A half-baked state analysis system! Well, maybe 3/4ths baked, since the absolute
 Support for two words instead of just one  
 The use of said two words to disambiguate status absolutus from constructus  
 To that end, a VERY small Minimalistic syntax system (as in Chomskyan minimalism, with a capital M) to merge two nouns and analyze their relationship (no Move nor Agree, sorry!)    
+### CONTACT
+If you'd like to talk to me about anything, would like to critique my code (which is very welcome!), suggest things to add or yell at me, my email is down below:
+
+codexderelict@proton.me
