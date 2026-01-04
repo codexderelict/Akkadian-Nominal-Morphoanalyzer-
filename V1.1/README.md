@@ -15,7 +15,7 @@ As a Semitic language, it has many of the same features as others; non-concatena
 The addition of state analysis (governed, absolute, construct)
 ### POTENTIAL IMPROVEMENTS
 Support for two words instead of just one  
-Tree-based constituency mini-parser for valency/head marking in order to disambiguate the absolute and construct states. What I have in mind is this small CFG, implemented through constraint as opposed to generation:  
+Tree-based constituency noun phrase mini-parser for valency/head marking in order to disambiguate the absolute and construct states. What I have in mind is this small CFG, implemented through constraint as opposed to generation:  
 
 S  => NP  
 
