@@ -1,7 +1,10 @@
 ## INTRODUCTION
 
 This is the first "real" version of the Akkadian Nominal Morphoanalyzer, a program/application that, as the name implies, analyzes Akkadian nouns for their case, gender and number. The possible cases are: nom (nominative), acc (accusative), gen (genitive) and obl (oblique, reserved for dual and plural nouns). The possible numbers are: sg (singular), dual (dual), and pl (plural), and the possible genders are: masc (masculine) and fem (feminine). 
-
+## REQUIREMENTS
+Python 3.13  
+PySimpleGUI/FreeSimpleGUI  
+A cursory knowledge of Akkadian and Semitic noun morphology  
 ## HOW IT WORKS
 
 It is a purely rule-based analyzer, that does not rely on probabilistic parsing or neural techniques. It only uses regular expressions and pattern matching. When a word is inputted in the GUI (in Latin characters and not cuneiform) and one clicks "Analyze" (in main.py), an instance of the Noun class is created, and the engine (akkadian_engine.py) loops through the dictionary of regex patterns (noun_patterns.py), and when a match is found, the value of the matched key, the regex pattern, is returned as a 3-tuple of noun, case and gender, the attributes of the Noun object. If there is no match, it returns a 3-tuple of None. 
