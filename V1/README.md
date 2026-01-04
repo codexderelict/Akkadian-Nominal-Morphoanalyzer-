@@ -1,34 +1,25 @@
-The first real version of the Akkadian Nominal Morphoanalyzer is finally here! :D  
-Having finished CS50P and being introduced to the power of OOP, modularity and regular expressions, I finally developed a version I feel proud of. Goodbye string ops, hello regex!  
-This is my CS50P final project, though I don't plan on submitting it and I never submitted anything on edX, choosing instead to do the problems myself. 
-Perhaps the greatest difficulty I faced was learning the ropes of regular expressions. Building the knowledge was hard enough, building the confidence to put out a project like this even harder.  
-In fact, in the beginning, I thought that this project was a crapshoot and well beyond my limits at that point. Just days later, I got this working and I'm very happy with it.  
+## INTRODUCTION
 
-REQUIREMENTS:  
-Python 3.13  
-FreeSimpleGUI  
-Cursory knowledge of Akkadian noun morphology  
+This is the first "real" version of the Akkadian Nominal Morphoanalyzer, a program/application that, as the name implies, analyzes Akkadian nouns for their case, gender and number. The possible cases are: nom (nominative), acc (accusative), gen (genitive) and obl (oblique, reserved for dual and plural nouns). The possible numbers are: sg (singular), dual (dual), and pl (plural), and the possible genders are: masc (masculine) and fem (feminine). 
 
-HOW TO USE:  
-Run main.py and you'll be greeted with the frontend GUI. Input one single Akkadian noun (in status rectus/governed state) and click "Analyze". Below the input prompt, you'll find the gender, number and case. Simple!  
+## HOW IT WORKS
 
-WHAT'S NEW:  
-A GUI with FreeSimpleGUI for ease of use  
-More robust grammatical analysis using regular expressions  
-Modular design (three separate files for regex patterns, engine and GUI!)  
-Dictionary/list comprehension and OOP based approach as opposed to if-else blocks  
+It is a purely rule-based analyzer, that does not rely on probabilistic parsing or neural techniques. It only uses regular expressions and pattern matching. When a word is inputted in the GUI (in Latin characters and not cuneiform) and one clicks "Analyze" (in main.py), an instance of the Noun class is created, and the engine (akkadian_engine.py) loops through the dictionary of regex patterns (noun_patterns.py), and when a match is found, the value of the matched key, the regex pattern, is returned as a 3-tuple of noun, case and gender, the attributes of the Noun object. If there is no match, it returns a 3-tuple of None. 
 
-POSSIBLE FUTURE IMPROVEMENTS:  
-Addition of grammatical state analysis (rectus, absolutus, constructus)  
-Nicer GUI with a fun little image added to the top  
-Complex FST/transitional/state-machine based approach  
-Probabilistic parsing for edge case handling  
-Addition of regexes for verbs, adjectives and root-stem extractions  
+The regular expressions function as suffix checks, and so each end with the end-of-string symbol. For example, if a word ends with "um" or "u" (without mimation) that is not preceded by "t", it's known to be in the masculine singular nominative, for example. The regex pattern for that is "\[^t]um?$". 
 
-THANKS:  
-My 12th grade statistics teacher, Ms. F, for teaching me that I can think mathematically and solve formal problems in math, logic, language and programming alike.   
-My friends (all of them!) for keeping my spirits high when I felt incapable of moving forward, in life, or in programming  
-Old Web 1.0 sites (Omniglot, Ancient Hebrew Research Center and others) for making me fall in love with historical linguistics as a child  
-My parents for having subsidized me and keeping me alive long enough to start this project in the first place  
-David Malan and the folks over at Harvard responsible for CS50, the courses that turned me from a coder into a programmer  
-God, for having given me the enthusiasm and love for systems, structures and models, be they linguistic, logical, mathematical or computational  
+## CONTEXT
+
+Akkadian is an ancient East Semitic language formerly spoken in Mesopotamia from about the 2nd millennium BC to the 5th century BC. It was the language of the Akkadian Empire, often considered the first known imperial regime, and the subsequent Mesopotamian empires (Old and Middle Assyrian empires, Babylonia, and the early Neo-Assyrian empire). when Aramaic was included as a language of government around the 8th century BC, the Akkadian language's use slowly dwindled. 
+
+As a Semitic language, it has many of the same features; non-concatenative root and stem based morphology, 3 cases (which Arabic conserved, unlike Aramaic and Hebrew), a state system (with three states, governed, absolute and construct, though the absolute was less used), two genders (masculine and feminine) with the marking for feminine being a -t suffix (just like Arabic and to a lesser extent Hebrew). I chose it precisely because it retained many of the interesting features of Semitic languages, while not being comparatively difficult to work with. Classical/MS Arabic and Biblical Hebrew grammar would require a lot more work, and I wanted a proof of concept. 
+
+## THANK YOU TO:
+My parents for assisting me through life
+My father, for his interest and incredible knowledge of Arabic grammar (which I may or may not have inherited.)
+Jeff Benner's Ancient Hebrew Research Center, reading through it as a child was partly what sparked my interest in language
+God, for allowing me the enthusiasm for systems, be they mathematical, logical, linguistic or computational. 
+You, for your interest in the project. 
+## CONTACT:
+If you'd like to critique my code or just talk, my email is codexderelict@proton.me
+## THANK YOU
