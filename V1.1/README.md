@@ -15,6 +15,6 @@ As a Semitic language, it has many of the same features as others; non-concatena
 The addition of state analysis (governed, absolute, construct)
 ### POTENTIAL IMPROVEMENTS
 Support for two words instead of just one  
-Tree-based constituency-based mini-parser for valency/head marking in order to disambiguate the absolute and construct states
+Tree-based constituency mini-parser for valency/head marking in order to disambiguate the absolute and construct states
 ### CONTACT
 If you'd like to critique my code or just talk, my email is codexderelict@proton.me.
