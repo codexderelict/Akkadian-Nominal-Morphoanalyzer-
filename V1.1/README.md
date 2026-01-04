@@ -17,9 +17,9 @@ The addition of state analysis (governed, absolute, construct)
 Support for two words instead of just one  
 Tree-based constituency mini-parser for valency/head marking in order to disambiguate the absolute and construct states. What I have in mind is this small CFG:  
 
-S  -> NP  
-NP -> N[state=governed] N[state=absolute]  
-NP -> N[state=construct] N[state=governed, case=gen]
+S  => NP  
+NP => N[state=governed] N[state=absolute]  
+NP => N[state=construct] N[state=governed, case=gen]
 
 ### CONTACT
 If you'd like to critique my code or just talk, my email is codexderelict@proton.me.
