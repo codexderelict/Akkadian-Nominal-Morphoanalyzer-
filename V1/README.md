@@ -17,6 +17,13 @@ Akkadian is an ancient East Semitic language formerly spoken in Mesopotamia from
 
 As a Semitic language, it has many of the same features as others; non-concatenative root and stem based morphology, 3 cases (which Arabic conserved, unlike Aramaic and Hebrew), a state system (with three states, governed, absolute and construct, though the absolute was less used), two genders (masculine and feminine) with the marking for feminine being a -t suffix (just like Arabic and to a lesser extent Hebrew). I chose it precisely because it retained many of the interesting features of Semitic languages, while not being comparatively difficult to work with. Classical/MS Arabic and Biblical Hebrew grammar would require a lot more work, and I wanted a proof of concept. 
 
+## POSSIBLE IMPROVEMENTS
+
+The addition of handling states
+Possibly support for two nouns with head and dependent marking (important for disambiguating the absolute from construct state)
+To that end, a small tree-based model for noun-phrase constituency + feature structures (case, number, gender, state), which can be modified based on position (head or dependent, subject or predicate)
+
+
 ## THANK YOU TO:
 My parents for assisting me through life  
 My father, for his interest and incredible knowledge of Arabic grammar (which I may or may not have inherited.)  
