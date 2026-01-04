@@ -21,7 +21,7 @@ As a Semitic language, it has many of the same features as others; non-concatena
 
 The addition of handling states  
 Possibly support for two nouns with head and dependent marking (important for disambiguating the absolute from construct state)  
-To that end, a small tree-based model for noun-phrase constituency + feature structures (case, number, gender, state), which can be modified based on position (head or dependent, subject or predicate)  
+To that end, a small tree-based model for noun-phrase constituency + feature structures (case, number, gender, state), which can be modified based on position/valency (head or dependent, subject or predicate)  
 
 
 ## THANK YOU TO:
