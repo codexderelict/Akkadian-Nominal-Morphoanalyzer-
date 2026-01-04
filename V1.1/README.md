@@ -3,7 +3,7 @@ Python 3.13
 FreeSimpleGUI/PySimpleGUI  
 Cursory knowledge of Akkadian (or Semitic more generally) noun morphology  
 ### HOW IT WORKS
-It is a purely rule-based analyzer, that does not rely on probabilistic parsing or neural techniques. It only uses regular expressions and pattern matching. When a word is inputted in the GUI (in Latin characters and not cuneiform) and one clicks "Analyze" (in main.py), an instance of the Noun class is created, and the engine (akkadian_engine.py) loops through the dictionary of regex patterns (noun_patterns.py), and when a match is found, the value of the matched key, the regex pattern, is returned as a 3-tuple of noun, case, gender, and state as the attributes of the Noun object. If there is no match, it returns a 4-tuple of None.
+It is a purely rule-based analyzer, that does not rely on probabilistic parsing or neural techniques. It only uses regular expressions and pattern matching. When a word is inputted in the GUI (in Latin characters and not cuneiform) and one clicks "Analyze" (in main.py), an instance of the Noun class is created, and the engine (akkadian_engine.py) loops through the dictionary of regex patterns (noun_patterns.py), and when a match is found, the value of the matched key, the regex pattern, is returned as a 4-tuple of noun, case, gender, and state as the attributes of the Noun object. If there is no match, it returns a 4-tuple of None.
 
 The regular expressions function as suffix checks, and so each end with the end-of-string symbol. For example, if a word ends with "um" or "u" (without mimation) that is not preceded by "t", it's known to be in the masculine singular nominative, for example. The regex pattern for that is "[^t]um?$".
 ### CONTEXT
