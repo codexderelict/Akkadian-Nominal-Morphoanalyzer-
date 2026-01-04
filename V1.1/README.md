@@ -1,24 +1,21 @@
-### INTRODUCTION
-
-Well, hello! Welcome to V1.1 of the Akkadian Nominal Morphoanalyzer, or Akkadian Noun Morphoanalyzer, ANM for short. For those unfamiliar, this is an application/program I made to analyze Akkadian nouns (I sure do come up with some descriptive names!) When a noun is inputted, information on the noun is outputted. For those unfamiliar with Akkadian, it's an ancient Semitic language spoken in Mesopotamia, which mainly comprises Iraq in the modern day. It was the language of the Akkadian Empire, the first known imperial state, as well as the language of the Code of Hammurabi.  
-
-In fact, I may give this a fun name like Bashmu, named after the Mesopotamian snake god (since it's written in Python). I may also add a Sumerogram as the favicon, the one for "snake" (𒈲, can you see it?)  
-
-One issue I'm facing is disambiguating status absolutus from constructus, which can only be done syntactically if there's multiple words and would require more than just regexes (i.e. the backbone of the project). Right now, it's written as "abs/con", since it could be both.  
-
 ### REQUIREMENTS
 Python 3.13  
 FreeSimpleGUI/PySimpleGUI  
 Cursory knowledge of Akkadian (or Semitic more generally) noun morphology  
-### HOW TO USE
-Run main.py, and you'll be greeted with the GUI. Input the noun in the text prompt (in Latin characters, no cuneiform support, sorry!), and click "Analyze". You'll then see the noun's information below: case (nominative, accusative or genitive), gender (masculine, feminine), number (singular, dual, plural), and state (rectus, absolutus/constructus, or in English, governed, absolute/construct).  
+### HOW IT WORKS
+It is a purely rule-based analyzer, that does not rely on probabilistic parsing or neural techniques. It only uses regular expressions and pattern matching. When a word is inputted in the GUI (in Latin characters and not cuneiform) and one clicks "Analyze" (in main.py), an instance of the Noun class is created, and the engine (akkadian_engine.py) loops through the dictionary of regex patterns (noun_patterns.py), and when a match is found, the value of the matched key, the regex pattern, is returned as a 3-tuple of noun, case, gender, and state as the attributes of the Noun object. If there is no match, it returns a 4-tuple of None.
+
+The regular expressions function as suffix checks, and so each end with the end-of-string symbol. For example, if a word ends with "um" or "u" (without mimation) that is not preceded by "t", it's known to be in the masculine singular nominative, for example. The regex pattern for that is "[^t]um?$".
+### CONTEXT
+Akkadian is an ancient East Semitic language formerly spoken in Mesopotamia from about the 2nd millennium BC to the 5th century BC. It was the language of the Akkadian Empire, often considered the first known imperial regime, and the subsequent Mesopotamian empires (Old and Middle Assyrian empires, Babylonia, and the early Neo-Assyrian empire). when Aramaic was included as a language of government around the 8th century BC, the Akkadian language's use slowly dwindled. It is the language used for the Code of Hammurabi, one of the earliest legal codes written as well as the language of the Epic of Gilgamesh, the oldest surviving great work of literature.
+
+As a Semitic language, it has many of the same features as others; non-concatenative root and stem based morphology, 3 cases (which Arabic conserved, unlike Aramaic and Hebrew), a state system (with three states, governed, absolute and construct, though the absolute was less used), two genders (masculine and feminine) with the marking for feminine being a -t suffix (just like Arabic and to a lesser extent Hebrew). I chose it precisely because it retained many of the interesting features of Semitic languages, while not being comparatively difficult to work with. Classical/MS Arabic and Biblical Hebrew grammar would require a lot more work, and I wanted a proof of concept.
+
 ### WHAT'S NEW 
-A half-baked state analysis system! Well, maybe 3/4ths baked, since the absolute state is not often used. That's it! 
+The addition of state analysis (governed, absolute, construct)
 ### POTENTIAL IMPROVEMENTS
 Support for two words instead of just one  
 The use of said two words to disambiguate status absolutus from constructus  
-To that end, a VERY small Minimalistic syntax system (as in Chomskyan minimalism, with a capital M) to merge two nouns and analyze their relationship (no Move nor Agree, sorry!)    
+Tree-based constituency-based mini-parser for valency/head marking
 ### CONTACT
-If you'd like to talk to me about anything, would like to critique my code (which is very welcome!), suggest things to add or yell at me, my email is down below:
-
-codexderelict@proton.me
+If you'd like to critique my code or just talk, my email is codexderelict@proton.me.
