@@ -22,4 +22,3 @@ God, for allowing me the enthusiasm for systems, be they mathematical, logical, 
 You, for your interest in the project. 
 ## CONTACT:
 If you'd like to critique my code or just talk, my email is codexderelict@proton.me
-## THANK YOU
