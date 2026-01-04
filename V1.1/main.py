@@ -7,7 +7,7 @@ layout = [
     [sg.Text('Gender: ', key="-GENDER-"), sg.Text('Number: ',key='-NUMBER-'),sg.Text('Case:',key='-CASE-'),sg.Text('State:',key='-STATE-')]
 
 ]
-window = sg.Window('Akkadian Nominal Morphoanalyzer V1.0', layout)
+window = sg.Window('Akkadian Nominal Morphoanalyzer V1.1', layout)
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED:
@@ -22,4 +22,5 @@ window.close()
         
 
     
+
 
