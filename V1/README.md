@@ -15,10 +15,10 @@ Akkadian is an ancient East Semitic language formerly spoken in Mesopotamia from
 As a Semitic language, it has many of the same features; non-concatenative root and stem based morphology, 3 cases (which Arabic conserved, unlike Aramaic and Hebrew), a state system (with three states, governed, absolute and construct, though the absolute was less used), two genders (masculine and feminine) with the marking for feminine being a -t suffix (just like Arabic and to a lesser extent Hebrew). I chose it precisely because it retained many of the interesting features of Semitic languages, while not being comparatively difficult to work with. Classical/MS Arabic and Biblical Hebrew grammar would require a lot more work, and I wanted a proof of concept. 
 
 ## THANK YOU TO:
-My parents for assisting me through life
-My father, for his interest and incredible knowledge of Arabic grammar (which I may or may not have inherited.)
-Jeff Benner's Ancient Hebrew Research Center, reading through it as a child was partly what sparked my interest in language
-God, for allowing me the enthusiasm for systems, be they mathematical, logical, linguistic or computational. 
-You, for your interest in the project. 
+My parents for assisting me through life  
+My father, for his interest and incredible knowledge of Arabic grammar (which I may or may not have inherited.)  
+Jeff Benner's Ancient Hebrew Research Center, reading through it as a child was partly what sparked my interest in language  
+God, for allowing me the enthusiasm for systems, be they mathematical, logical, linguistic or computational.   
+You, for your interest in the project.  
 ## CONTACT:
 If you'd like to critique my code or just talk, my email is codexderelict@proton.me
