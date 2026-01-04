@@ -22,8 +22,8 @@ S  => NP
 NP => N[state=governed] N[state=absolute]  
 Where the first noun is a subject and the latter is a predicate.  
 
-NP => N[state=construct] N[state=governed, case=gen] 
-Where the relation is of possession, hence the genitive case.  
+NP => N[state=construct] N[state=governed, case=gen]  
+Where the relation is of possession, hence the genitive case.   
 
 ### CONTACT
 If you'd like to critique my code or just talk, my email is codexderelict@proton.me.
