@@ -16,8 +16,8 @@ Noun-phrase level disambiguation between the absolute and construct states
 Suffix regexes must be preceded by at least one letter   
 
 ## POTENTIAL ADDITIONS:
-Probabilistic parsing/analysis
-Support for other Semitic languages 
+Probabilistic parsing/analysis  
+Support for other Semitic languages  
 
 ### REQUIREMENTS
 Python 3.13  
