@@ -1,0 +1,18 @@
+patterns = {
+    r"\w+[^t]um?$": ["masc", "sg", "nom", "rect"],
+    r"\w+[^t]im?$": ["masc", "sg", "gen", "rect"],
+    r"\w+[^t]am?$": ["masc", "sg", "acc", "rect"],
+    r"\w+[^t][āa]n":["masc", "dual", "nom", "rect"],
+    r"\w+[^t][īi]n":["masc", "dual", "obl", "rect"],
+    r"\w+[^t]ū$":["masc", "pl", "nom", "rect"],
+    r"\w+[^t]ī$":["masc", "pl", "obl", "rect"],
+    r"\w+[^āīē]tum?$": ["fem", "sg", "nom", "rect"],
+    r"\w+[^āīē]tim?$": ["fem", "sg", "gen", "rect"],
+    r"\w+[^āīē]tam?$": ["fem", "sg", "acc", "rect"],
+    r"\w+t[āa]n$":["fem", "dual", "nom", "rect"],
+    r"\w+t[īi]n$":["fem", "dual", "obl", "rect"],
+    r"\w+[āīē]tum?$": ["fem", "pl", "nom", "rect"],
+    r"\w+[āīē]tim?$": ["fem", "pl", "obl", "rect"],
+    r"\w+t$": ["fem", "sg", "nom", "abs/con"],
+    r"\w+[^āīēaie]$": ["masc", "sg", "nom", "abs/con"],
+}
