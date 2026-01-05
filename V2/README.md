@@ -19,6 +19,11 @@ Suffix regexes must be preceded by at least one letter
 Probabilistic parsing/analysis
 Support for other Semitic languages 
 
+### REQUIREMENTS
+Python 3.13  
+FreeSimpleGUI/PySimpleGUI  
+Cursory knowledge of Akkadian (or Semitic more generally) noun morphology  
+
 ## HOW TO USE
 Run main.py, and you'll be presented with a GUI with a text-field with a button labeled "Analyze" after it. Input a maximum of two nouns. When you click "Analyze", you will find the noun(s)' case, number, gender and state.
 
