@@ -19,7 +19,7 @@ Suffix regexes must be preceded by at least one letter
 Probabilistic parsing/analysis  
 Support for other Semitic languages  
 
-### REQUIREMENTS
+## REQUIREMENTS
 Python 3.13  
 FreeSimpleGUI/PySimpleGUI  
 Cursory knowledge of Akkadian (or Semitic more generally) noun morphology  
