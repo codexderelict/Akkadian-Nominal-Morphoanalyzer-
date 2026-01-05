@@ -10,13 +10,17 @@ Akkadian is an ancient East Semitic language formerly spoken in Mesopotamia from
 
 As a Semitic language, it has many of the same features as others; non-concatenative root and stem based morphology, 3 cases (which Arabic conserved, unlike Aramaic and Hebrew), a state system (with three states, governed, absolute and construct, though the absolute was less used), two genders (masculine and feminine) with the marking for feminine being a -t suffix (just like Arabic and to a lesser extent Hebrew). I chose it precisely because it retained many of the interesting features of Semitic languages, while not being comparatively difficult to work with. Classical/MS Arabic and Biblical Hebrew grammar would require a lot more work, and I wanted a proof of concept.  
 
-## WHAT'S NEW  
-Support for two nouns, not just one. 
-Noun-phrase level disambiguation between the absolute and construct states
-Suffix regexes must be preceded by at least one letter 
+## WHAT'S NEW   
+Support for two nouns, not just one  
+Noun-phrase level disambiguation between the absolute and construct states  
+Suffix regexes must be preceded by at least one letter   
+
+## POTENTIAL ADDITIONS:
+Probabilistic parsing/analysis
+Support for other Semitic languages 
 
 ## HOW TO USE
 Run main.py, and you'll be presented with a GUI with a text-field with a button labeled "Analyze" after it. Input a maximum of two nouns. When you click "Analyze", you will find the noun(s)' case, number, gender and state.
 
-## CONTACT
+## CONTACT  
 My email is codexderelict@proton.me, and I respond to any message and don't mind messages of any nature. 
