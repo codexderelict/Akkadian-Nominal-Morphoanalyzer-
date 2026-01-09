@@ -1,3 +1,5 @@
+(THIS HAS BEEN SUPERCEDED BY V1, V1.1 AND V2; THIS IS THE PROTOTYPE VERSION AND NOT REPRESENTATIVE OF THE PROJECT. CHECK OUT V2.0 INSTEAD)
+
 This is a rule-based Akkadian nominal morphoanalyzer that is currently in the prototype stage. I worked on this first version while feeling sick and sleep-deprived, so it's not exactly the best. This is my very first computational linguistics project, and I hope for the more complete version to be my CS50P final. I've only done number, case and gender for now, but states, roots and stems are on the way. 
 
 I chose Akkadian mainly for its simplicity. Its noun system is one of the easiest in the Semitic realm for its agglutinative quality alongside the more traditional non-concatenative morphology of Semitic languages (possibly something from Sumerian influence?). I hope for this to be a launchpad to work on other Semitic languages, especially Arabic, my native language, but I'm also interested in maybe working on similar projects for Ge'ez, Syriac or Biblical Hebrew. These will, however, require a lot more transformation rules than this. In honesty, this begs to be a Lisp project as well, so I may actually make this an SICP/Composing Programs final project too.
@@ -15,4 +17,5 @@ Simon Ager and Omniglot, another site about languages that I spent ages looking 
 My parents, for their speaking German intrigued me and got me to study language and linguistics... also for making me but that's another thing.
 All of my friends, for being my friends and that.
 Melechesh, for providing the soundtrack to Babylon's rebirth.
+
 
