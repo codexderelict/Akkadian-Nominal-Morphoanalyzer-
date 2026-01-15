@@ -17,10 +17,16 @@ Suffix regexes must be preceded by at least one letter
 
 ## POTENTIAL ADDITIONS:
 Probabilistic parsing/analysis  
-Support for other Semitic languages  
-
+Full syntactical analysis for verbs, nouns, adjectives, et cetera
 ## CURRENT ADDITION IN PROGRESS:  
-Root extraction for verbal nouns 
+Root extraction for infinitive verbal nouns
+#### DIFFICULTIES  
+Weak verbs and lenition  
+Discernment between nominal and verbal nouns  
+Different structure for verbal nouns (not only case, gender, number and state but also stem and root)
+#### POSSIBLE SOLUTIONS
+Encapsulating Noun class into VerbalNoun
+Normalizing feature structures as a dict instead of attrs for uniform printing of both verbal and nominal nouns
 
 ## REQUIREMENTS
 Python 3.13  
