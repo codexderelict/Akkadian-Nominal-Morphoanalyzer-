@@ -19,6 +19,9 @@ Suffix regexes must be preceded by at least one letter
 Probabilistic parsing/analysis  
 Support for other Semitic languages  
 
+## CURRENT ADDITION IN PROGRESS:  
+Root extraction for verbal nouns 
+
 ## REQUIREMENTS
 Python 3.13  
 FreeSimpleGUI/PySimpleGUI  
