@@ -25,7 +25,7 @@ Weak verbs and lenition
 Discernment between nominal and verbal nouns  
 Different structure for verbal nouns (not only case, gender, number and state but also stem and root)
 #### POSSIBLE SOLUTIONS
-Encapsulating Noun class into VerbalNoun  
+Inheritance (VerbalNoun as a child class of Noun)
 Normalizing feature structures as a dict instead of attributes for uniform printing of both verbal and nominal nouns   
 
 ## REQUIREMENTS
