@@ -1,6 +1,6 @@
 ## INTRODUCTION  
 
-This is version 2.0 of my Akkadian noun analyzer. I numbered it V2.0 because it's the first version that went beyond the plans I had originally set for it, which was a small regex-based analyzer for single nouns with no syntax. However, because state disambiguation is syntactic, I implemented a small constraint-based noun-phrase level state disambiguator with it, as both the absolute and construct states are zero suffixed. So, if the noun to be disambiguated is in the absolute, it must be a predicate and preceded by a noun in the governed state. If the noun is a construct noun, it must be possessed, and so proceeded by a noun in the genitive.  
+This is version 2.0 of my Akkadian noun analyzer. I numbered it V2.0 because it's the first version that went beyond the plans I had originally set for it, which was a small regex-based analyzer for single nouns with no syntax. However, because state disambiguation is syntactic, I implemented a small constraint-based noun-phrase level state disambiguator with it, as both the absolute and construct states are zero suffixed. So, if the noun to be disambiguated is in the absolute, it must be a predicate and preceded by a noun in the governed state. If the noun is a construct noun, it must be possessed, and so followed by a noun in the genitive.  
 
 Furthermore, the regular expressions were originally such that just typing in a suffix like "tum" on its own would be analyzed normally. Now, they must function like suffixes and be preceded by at least one character (\w+).  
 
